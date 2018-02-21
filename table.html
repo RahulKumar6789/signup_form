@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration Table List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<?php
+
+include "connection.php";
+
+<div class="container">
+  <h2>Registration Table</h2>
+  <p>All User Present in Database :</p>   <!-- The .table-striped class adds zebra-stripes to a table -->
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Username</th>
+        <th>Email</th>
+	<th>Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>$id</td>
+        <td>$username</td>
+        <td>$email</td>
+        <td>$password</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
